@@ -1,0 +1,47 @@
+# 加载oh-my-zsh库
+antigen use oh-my-zsh
+
+# 加载原版oh-my-zsh中的功能(robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+antigen bundle z
+
+antigen bundle autojump
+
+antigen bundle common-aliases
+
+antigen bundle extract
+
+antigen bundle d
+
+antigen bundle zsh_stats
+
+antigen bundle take
+
+# 语法高亮功能
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# 代码提示功能
+antigen bundle zsh-users/zsh-autosuggestions
+
+# 自动补全功能
+antigen bundle zsh-users/zsh-completions
+
+antigen bundle incr
+
+
+
+# 加载主题
+# antigen theme amuse
+# antigen theme git branch
+
+# antigen theme romkatv/powerlevel10k
+antigen theme ys
+
+
+# 保存更改
+antigen apply
