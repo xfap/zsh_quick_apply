@@ -1,6 +1,13 @@
 # zsh_quick_apply
 
-## Check if installed Zsh in your computer
+## Copy fiels in directory `settings` to your home dir.
+
+Run: `zsh`. 
+That's all.
+
+If somethins wrong? 
+
+## First check if installed Zsh in your computer
 
 - `which zsh`
 - Or, `cat /etc/shells`
@@ -24,5 +31,6 @@ Check: run `zsh --version`
 
 More info, see [zsh install](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
-## Copy fiels in directory `settings` to your home dir.
+## Check if installed `autojump`
 
+Install it.
