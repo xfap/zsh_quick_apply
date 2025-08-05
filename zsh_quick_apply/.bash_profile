@@ -14,6 +14,6 @@
 alias set-bazel-cache_name="export CONTAINER_ENV=container"
 alias unset-bazel-cache_name="unset CONTAINER_ENV" 
 # used for bazelrc
-#      build: container --symlink_prefix=container-
-#      bazel-test: container --symlink_prefix=container-bazel-
+#      build:container --symlink_prefix=container-bazel-
+#      test:container --symlink_prefix=container-bazel-
 # usage: bazel build //target_name --config=$(CONTAINER_ENV);
