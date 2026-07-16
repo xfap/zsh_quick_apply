@@ -1,5 +1,34 @@
 # zsh_quick_apply
 
+## Quick apply
+
+This moves the template files to your home directory, including dotfiles. Back
+up any existing shell configuration first. Exit the spawned Zsh session to
+continue with the default-shell change and cleanup.
+
+### macOS
+
+```zsh
+cd ~ && \
+  git clone https://github.com/xfap/zsh_quick_apply.git temp_zsh && \
+  mv temp_zsh/zsh_quick_apply/.[!.]* temp_zsh/zsh_quick_apply/* . && \
+  zsh && \
+  chsh -s "$(which zsh)" && \
+  rm -rf temp_zsh
+```
+
+### Ubuntu
+
+```zsh
+sudo apt-get install -y zsh && cd ~ && git clone https://github.com/xfap/zsh_quick_apply.git temp_zsh && mv ~/temp_zsh/zsh_quick_apply/* ~/temp_zsh/zsh_quick_apply/.[^.]* . && zsh && chsh -s "$(which zsh)"
+```
+
+### CentOS
+
+```zsh
+sudo yum install -y zsh && cd ~ && git clone https://github.com/xfap/zsh_quick_apply.git temp_zsh && mv ~/temp_zsh/zsh_quick_apply/* ~/temp_zsh/zsh_quick_apply/.[^.]* . && zsh && chsh -s "$(which zsh)"
+```
+
 ## Copy fiels in directory `settings` to your home dir.
 
 Run: `zsh`. 
