@@ -17,3 +17,8 @@ alias unset-bazel-cache_name="unset CONTAINER_ENV"
 #      build:container --symlink_prefix=container-bazel-
 #      test:container --symlink_prefix=container-bazel-
 # usage: bazel build //target_name --config=$(CONTAINER_ENV);
+
+# Keep version managers out of shell startup. Enable them only in a session
+# that needs them:
+# export NVM_DIR="$HOME/.nvm"; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+# eval "$(jenv init -)"
