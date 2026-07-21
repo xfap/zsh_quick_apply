@@ -2,6 +2,8 @@
 
 ## Quick apply
 
+请在当前机器安装并启用 [zsh_quick_apply](https://github.com/xfap/zsh_quick_apply)：先识别操作系统、发行版、CPU 架构、默认 Shell 和可用包管理器，备份现有 Shell 配置，再根据本机环境调整 README 中的命令；如果遇到依赖、路径、权限或命令不兼容，请定位原因并采用当前平台的等价方案修复（涉及提权或覆盖文件时先征求确认），最后验证 Zsh 能正常启动且配置已经生效，并说明改动和验证结果。
+
 This moves the template files to your home directory, including dotfiles. Back
 up any existing shell configuration first. Exit the spawned Zsh session to
 continue with the default-shell change and cleanup.
